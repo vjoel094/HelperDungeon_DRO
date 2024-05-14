@@ -10,7 +10,7 @@ module.exports = {
             .setColor('Blurple')
             .setTitle('Riddle dungeon web helper')
             .setURL('http://dro.somee.com/')
-            .setFooter({text: 'website not available for mobile devices'})
+            .setFooter({ text: 'New Q&A or corrections send them to Pitohui' })
 
         message.channel.send({ embeds: [embed] });
     }
