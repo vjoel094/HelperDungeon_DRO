@@ -1,0 +1,1627 @@
+const { EmbedBuilder } = require("discord.js");
+module.exports = {
+    desciption: 'Water Space dungeon Answers',
+    run: async (message) => {
+        const arg = message.content.slice(1).split(' ')[0];
+
+        if (arg.length < 1) return message.reply('Invalid argument');
+
+        let date = new Date();
+        let datepst = date.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" });
+
+        date = datepst.slice(0, 2) + datepst.slice(3, 5);
+
+        var answer = "Not configured yet";
+
+        if (date == "0101" || date == "1001" || date == "1101" || date == "1201"
+            || date == "2101" || date == "2301") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Seadramon [Champion/Data]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Swimmon [Rookie/Vaccine]";
+        }
+        else if (date == "0201" || date == "1301" || date == "2001"
+            || date == "2401" || date == "3101") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Whalemon [Champion/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Mega Seadramon [Ultimate/Data]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Swimmon [Rookie/Vaccine]";
+        } else if (date == "0301" || date == "1401" || date == "2501"
+            || date == "3001") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Whalemon [Champion/Vaccine]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Mega Seadramon [Ultimate/Data]" +
+                "\n (4) Swimmon [Rookie/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Gekomon [Champion/Virus]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Kamemon [Rookie/Data]";
+        } else if (date == "0401" || date == "1501" || date == "2201"
+            || date == "2601") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Whalemon [Champion/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Shakomon [Rookie/Virus]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Swimmon [Rookie/Vaccine]";
+        } else if (date == "0501" || date == "1601" || date == "2701") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Marine Devimon [Ultimate/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Kamemon [Rookie/Data]";
+        } else if (date == "0601" || date == "1701" || date == "2801") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Mega Seadramon [Ultimate/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0701" || date == "1801" || date == "2901") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Gekomon [Champion/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (7) Kamemon [Rookie/Data]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0801" || date == "1901") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Gekomon [Champion/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0901") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        } else if (date == "0102" || date == "1002" || date == "1102"
+            || date == "1202" || date == "2102" || date == "2302") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Whalemon [Champion/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Shakomon [Rookie/Virus]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Swimmon [Rookie/Vaccine]";
+        } else if (date == "0202" || date == "1302" || date == "2002"
+            || date == "2402" || date == "3102") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Marine Devimon [Ultimate/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Kamemon [Rookie/Data]";
+        } else if (date == "0302" || date == "1402" || date == "2502"
+            || date == "3002") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Mega Seadramon [Ultimate/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0402" || date == "1502" || date == "2202"
+            || date == "2602") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Gekomon [Champion/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (7) Kamemon [Rookie/Data]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0502" || date == "1602" || date == "2702") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Gekomon [Champion/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0602" || date == "1702" || date == "2802") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        } else if (date == "0702" || date == "1802" || date == "2902") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        } else if (date == "0802" || date == "1902") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0902") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        } else if (date == "0103" || date == "1003" || date == "1103"
+            || date == "1203" || date == "2103" || date == "2303") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Whalemon [Champion/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Shakomon [Rookie/Virus]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Swimmon [Rookie/Vaccine]";
+        } else if (date == "0203" || date == "1303" || date == "2003"
+            || date == "2403" || date == "3103") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Marine Devimon [Ultimate/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Kamemon [Rookie/Data]";
+        } else if (date == "0303" || date == "1403" || date == "2503"
+            || date == "3003") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Mega Seadramon [Ultimate/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0403" || date == "1503" || date == "2203"
+            || date == "2603") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Gekomon [Champion/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (7) Kamemon [Rookie/Data]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0503" || date == "1603" || date == "2703") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Gekomon [Champion/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0603" || date == "1703" || date == "2803") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        } else if (date == "0703" || date == "1803" || date == "2903") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        } else if (date == "0803" || date == "1903") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0903") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        } else if (date == "0104" || date == "1004" || date == "1104"
+            || date == "1204" || date == "2104" || date == "2304") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Gekomon [Champion/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (7) Kamemon [Rookie/Data]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0204" || date == "1304" || date == "2004"
+            || date == "2404" || date == "3104") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Gekomon [Champion/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0304" || date == "1404" || date == "2504"
+            || date == "3004") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        } else if (date == "0404" || date == "1504" || date == "2204"
+            || date == "2604") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        } else if (date == "0504" || date == "1604" || date == "2704") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0604" || date == "1704" || date == "2804") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        } else if (date == "0704" || date == "1804" || date == "2904") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        } else if (date == "0804" || date == "1904") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Seadramon [Champion/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0904") {
+            answer =
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Whalemon [Champion/Vaccine]" +
+                "\n (4) Marine Devimon [Ultimate/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Kamemon [Rookie/Data]" +
+                "\n (7) Mega Seadramon [Ultimate/Data]" +
+                "\n (8) Gekomon [Champion/Virus]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0105" || date == "1005" || date == "1105"
+            || date == "1205" || date == "2105" || date == "2305") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Mega Seadramon [Ultimate/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0205" || date == "1305" || date == "2005"
+            || date == "2405" || date == "2505") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Gekomon [Champion/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (7) Kamemon [Rookie/Data]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        }
+        else if (date == "0305" || date == "1405" || date == "2505"
+            || date == "3005") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Gekomon [Champion/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        }
+        else if (date == "0405" || date == "1505" || date == "2205"
+            || date == "2605") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        }
+        else if (date == "0505" || date == "1605" || date == "2705") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0605" || date == "1705" || date == "2805") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0705" || date == "1805" || date == "2905") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0805" || date == "1905") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0905") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Seadramon [Champion/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0106" || date == "1006" || date == "1106"
+            || date == "1206" || date == "2106" || date == "2306") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0206" || date == "1306" || date == "2006"
+            || date == "2406" || date == "3106") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0306" || date == "1406" || date == "2506"
+            || date == "3006") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0406" || date == "1506" || date == "2206"
+            || date == "2606") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0506" || date == "1606" || date == "2706") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Seadramon [Champion/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0606" || date == "1706" || date == "2806") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Whalemon [Champion/Vaccine]" +
+                "\n (4) Marine Devimon [Ultimate/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Kamemon [Rookie/Data]" +
+                "\n (7) Mega Seadramon [Ultimate/Data]" +
+                "\n (8) Gekomon [Champion/Virus]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0706" || date == "1806" || date == "2906") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Swimmon [Rookie/Vaccine]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        }
+        else if (date == "0806" || date == "1906") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Shakomon [Rookie/Virus]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        }
+        else if (date == "0906") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Shakomon [Rookie/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Swimmon [Rookie/Vaccine]" +
+                "\n (6) Seadramon [Champion/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        } else if (date == "0107" || date == "1007" || date == "1107"
+            || date == "1207" || date == "2107" || date == "2307") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        }
+        else if (date == "0207" || date == "1307" || date == "2007"
+            || date == "2407" || date == "3107") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0307" || date == "1407" || date == "2507"
+            || date == "3007") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0407" || date == "1507" || date == "2207"
+            || date == "2607") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0507" || date == "1607" || date == "2707") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0607" || date == "1707" || date == "2807") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Seadramon [Champion/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0707" || date == "1807" || date == "2907") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Whalemon [Champion/Vaccine]" +
+                "\n (4) Marine Devimon [Ultimate/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Kamemon [Rookie/Data]" +
+                "\n (7) Mega Seadramon [Ultimate/Data]" +
+                "\n (8) Gekomon [Champion/Virus]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0807" || date == "1907") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Swimmon [Rookie/Vaccine]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        }
+        else if (date == "0907") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Shakomon [Rookie/Virus]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0108" || date == "1008" || date == "1108"
+            || date == "1208" || date == "2108" || date == "2308") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0208" || date == "1308" || date == "2008"
+            || date == "2408" || date == "3108") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Seadramon [Champion/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0308" || date == "1408" || date == "2508"
+            || date == "3008") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Whalemon [Champion/Vaccine]" +
+                "\n (4) Marine Devimon [Ultimate/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Kamemon [Rookie/Data]" +
+                "\n (7) Mega Seadramon [Ultimate/Data]" +
+                "\n (8) Gekomon [Champion/Virus]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0408" || date == "1508" || date == "2208"
+            || date == "2608") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Swimmon [Rookie/Vaccine]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        }
+        else if (date == "0508" || date == "1608" || date == "2708") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Shakomon [Rookie/Virus]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        }
+        else if (date == "0608" || date == "1708" || date == "2808") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Shakomon [Rookie/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Swimmon [Rookie/Vaccine]" +
+                "\n (6) Seadramon [Champion/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        }
+        else if (date == "0708" || date == "1808" || date == "2908") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Shakomon [Rookie/Virus]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        }
+        else if (date == "0808" || date == "1908") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Mega Seadramon [Ultimate/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Whalemon [Champion/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Kamemon [Rookie/Data]";
+        }
+        else if (date == "0908") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Seadramon [Champion/Data]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Kamemon [Rookie/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Mega Seadramon [Ultimate/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0109" || date == "1009" || date == "1109"
+            || date == "1209" || date == "2109" || date == "2309") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0209" || date == "1309" || date == "2009"
+            || date == "2409" || date == "3109") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0309" || date == "1409" || date == "2509"
+            || date == "3009") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Seadramon [Champion/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0409" || date == "1509" || date == "2209"
+            || date == "2609") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Whalemon [Champion/Vaccine]" +
+                "\n (4) Marine Devimon [Ultimate/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Kamemon [Rookie/Data]" +
+                "\n (7) Mega Seadramon [Ultimate/Data]" +
+                "\n (8) Gekomon [Champion/Virus]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0509" || date == "1609" || date == "2709") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Swimmon [Rookie/Vaccine]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        }
+        else if (date == "0609" || date == "1709" || date == "2809") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Shakomon [Rookie/Virus]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        }
+        else if (date == "0709" || date == "1809" || date == "2909") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Shakomon [Rookie/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Swimmon [Rookie/Vaccine]" +
+                "\n (6) Seadramon [Champion/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        }
+        else if (date == "0809" || date == "1909") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Shakomon [Rookie/Virus]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        }
+        else if (date == "0909") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Mega Seadramon [Ultimate/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Whalemon [Champion/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Kamemon [Rookie/Data]";
+        } else if (date == "0110" || date == "1010" || date == "1110"
+            || date == "1210" || date == "2110" || date == "2310") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Gekomon [Champion/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (7) Kamemon [Rookie/Data]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        }
+        else if (date == "0210" || date == "1310" || date == "2010"
+            || date == "2410" || date == "3110") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Gekomon [Champion/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        }
+        else if (date == "0310" || date == "1410" || date == "2510"
+            || date == "3010") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        }
+        else if (date == "0410" || date == "1510" || date == "2210"
+            || date == "2610") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0510" || date == "1610" || date == "2710") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0610" || date == "1710" || date == "2810") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        }
+        else if (date == "0710" || date == "1810" || date == "2910") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        }
+        else if (date == "0810" || date == "1910") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Seadramon [Champion/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        }
+        else if (date == "0910") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Whalemon [Champion/Vaccine]" +
+                "\n (4) Marine Devimon [Ultimate/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Kamemon [Rookie/Data]" +
+                "\n (7) Mega Seadramon [Ultimate/Data]" +
+                "\n (8) Gekomon [Champion/Virus]" +
+                "\n (9) Seadramon [Champion/Data]";
+        } else if (date == "0111" || date == "1011" || date == "1111" || date == "1211" || date == "2111" || date == "2311") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Marine Devimon [Ultimate/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Kamemon [Rookie/Data]";
+        } else if (date == "0211" || date == "1321" || date == "2031" || date == "2431") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Mega Seadramon [Ultimate/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0311" || date == "1425" || date == "2530") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Gekomon [Champion/Virus]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (7) Kamemon [Rookie/Data]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0411" || date == "1522" || date == "2622") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Swimmon [Rookie/Vaccine]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Gekomon [Champion/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0511" || date == "1627") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 1 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Kamemon [Rookie/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Mega Seadramon [Ultimate/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Gekomon [Champion/Virus]";
+        } else if (date == "0611" || date == "1728") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        } else if (date == "0711" || date == "1829") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0811" || date == "1920") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        } else if (date == "0911") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        } else if (date == "0112" || date == "1012" || date == "1112" || date == "1212" || date == "2112" || date == "2312") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Swimmon [Rookie/Vaccine]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Gekomon [Champion/Virus]" +
+                "\n (5) Seadramon [Champion/Data]" +
+                "\n (6) Whalemon [Champion/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        } else if (date == "0212" || date == "1320" || date == "2431") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Marine Devimon [Ultimate/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Shakomon [Rookie/Virus]" +
+                "\n (5) Kamemon [Rookie/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0312" || date == "1425" || date == "3025") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Shakomon [Rookie/Virus]" +
+                "\n (2) Gekomon [Champion/Virus]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (9) Seadramon [Champion/Data]";
+        } else if (date == "0412" || date == "1522" || date == "2622") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Seadramon [Champion/Data]" +
+                "\n (3) Kamemon [Rookie/Data]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Shakomon [Rookie/Virus]";
+        } else if (date == "0512" || date == "1627") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Seadramon [Champion/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Marine Devimon [Ultimate/Virus]" +
+                "\n (6) Gekomon [Champion/Virus]" +
+                "\n (7) Swimmon [Rookie/Vaccine]" +
+                "\n (8) Shakomon [Rookie/Virus]" +
+                "\n (9) Whalemon [Champion/Vaccine]";
+        } else if (date == "0612" || date == "1728") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Swimmon [Rookie/Vaccine]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Whalemon [Champion/Vaccine]" +
+                "\n (4) Marine Devimon [Ultimate/Virus]" +
+                "\n (5) Shakomon [Rookie/Virus]" +
+                "\n (6) Kamemon [Rookie/Data]" +
+                "\n (7) Mega Seadramon [Ultimate/Data]" +
+                "\n (8) Gekomon [Champion/Virus]" +
+                "\n (9) Seadramon [Champion/Data]";
+        } else if (date == "0712" || date == "1829") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 4 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Mega Seadramon [Ultimate/Data]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Swimmon [Rookie/Vaccine]" +
+                "\n (5) Whalemon [Champion/Vaccine]" +
+                "\n (6) Shakomon [Rookie/Virus]" +
+                "\n (7) Seadramon [Champion/Data]" +
+                "\n (8) Marine Devimon [Ultimate/Virus]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        } else if (date == "0812" || date == "1919") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 3 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Kamemon [Rookie/Data]" +
+                "\n (2) Hisyaryumon [Ultimate/Vaccine]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Whalemon [Champion/Vaccine]" +
+                "\n (5) Mega Seadramon [Ultimate/Data]" +
+                "\n (6) Swimmon [Rookie/Vaccine]" +
+                "\n (7) Shakomon [Rookie/Virus]" +
+                "\n (8) Seadramon [Champion/Data]" +
+                "\n (9) Marine Devimon [Ultimate/Virus]";
+        } else if (date == "0912") {
+            answer = "" +
+                "\nWaterspace 1F:" +
+                "\n Cave 2 " +
+                "\n\n Waterspace B1:" +
+                "\n (1) Mega Seadramon [Ultimate/Data]" +
+                "\n (2) Shakomon [Rookie/Virus]" +
+                "\n (3) Gekomon [Champion/Virus]" +
+                "\n (4) Kamemon [Rookie/Data]" +
+                "\n (5) Swimmon [Rookie/Vaccine]" +
+                "\n (6) Seadramon [Champion/Data]" +
+                "\n (7) Marine Devimon [Ultimate/Virus]" +
+                "\n (8) Whalemon [Champion/Vaccine]" +
+                "\n (9) Hisyaryumon [Ultimate/Vaccine]";
+        }
+
+        const embed = new EmbedBuilder()
+            .setColor('Blurple')
+            .setTitle('Waterspace Information')
+            .setDescription(answer)
+
+        message.channel.send({ embeds: [embed] });
+    }
+}
