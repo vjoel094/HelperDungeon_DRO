@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node index.js"
+=======
+    "start":"node index.js"
+>>>>>>> 50e7ad70b7f72d6610a6473970a5125a49e2618d
   },
   "keywords": [],
   "author": "",
