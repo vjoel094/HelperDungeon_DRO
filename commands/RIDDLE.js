@@ -9,7 +9,7 @@ module.exports = {
         const embed = new EmbedBuilder()
             .setColor('Blurple')
             .setTitle('Riddle dungeon web helper')
-            .setURL('https://riddldungeondro.up.railway.app/')
+            .setURL('https://riddledungeondro.up.railway.app/')
             .setFooter({ text: 'New Q&A or corrections send them to Pitohui' })
 
         message.channel.send({ embeds: [embed] });
