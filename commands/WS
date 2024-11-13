@@ -1377,7 +1377,7 @@ module.exports = {
                 "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
                 "\n (8) Seadramon [Champion/Data]" +
                 "\n (9) Kamemon [Rookie/Data]";
-        } else if (date == "0211" || date == "1321" || date == "2031" || date == "2431") {
+        } else if (date == "0211" || date == "1311" || date == "2011" || date == "2411" || date == "3111") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 4 " +
@@ -1391,7 +1391,7 @@ module.exports = {
                 "\n (7) Marine Devimon [Ultimate/Virus]" +
                 "\n (8) Mega Seadramon [Ultimate/Data]" +
                 "\n (9) Whalemon [Champion/Vaccine]";
-        } else if (date == "0311" || date == "1425" || date == "2530") {
+        } else if (date == "0311" || date == "1411" || date == "2511" || date == "3011") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 1 " +
@@ -1405,7 +1405,7 @@ module.exports = {
                 "\n (7) Kamemon [Rookie/Data]" +
                 "\n (8) Seadramon [Champion/Data]" +
                 "\n (9) Marine Devimon [Ultimate/Virus]";
-        } else if (date == "0411" || date == "1522" || date == "2622") {
+        } else if (date == "0411" || date == "1511" || date == "2211" || date == "2611") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 2 " +
@@ -1419,7 +1419,7 @@ module.exports = {
                 "\n (7) Gekomon [Champion/Virus]" +
                 "\n (8) Whalemon [Champion/Vaccine]" +
                 "\n (9) Marine Devimon [Ultimate/Virus]";
-        } else if (date == "0511" || date == "1627") {
+        } else if (date == "0511" || date == "1611" || date == "2711") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 1 " +
@@ -1433,7 +1433,7 @@ module.exports = {
                 "\n (7) Marine Devimon [Ultimate/Virus]" +
                 "\n (8) Shakomon [Rookie/Virus]" +
                 "\n (9) Gekomon [Champion/Virus]";
-        } else if (date == "0611" || date == "1728") {
+        } else if (date == "0611" || date == "1711" || date == "2811") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 4 " +
@@ -1447,7 +1447,7 @@ module.exports = {
                 "\n (7) Marine Devimon [Ultimate/Virus]" +
                 "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
                 "\n (9) Shakomon [Rookie/Virus]";
-        } else if (date == "0711" || date == "1829") {
+        } else if (date == "0711" || date == "1811" || date == "2911") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 2 " +
@@ -1461,7 +1461,7 @@ module.exports = {
                 "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
                 "\n (8) Seadramon [Champion/Data]" +
                 "\n (9) Whalemon [Champion/Vaccine]";
-        } else if (date == "0811" || date == "1920") {
+        } else if (date == "0811" || date == "1911") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 2 " +
@@ -1503,7 +1503,7 @@ module.exports = {
                 "\n (7) Marine Devimon [Ultimate/Virus]" +
                 "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
                 "\n (9) Shakomon [Rookie/Virus]";
-        } else if (date == "0212" || date == "1320" || date == "2431") {
+        } else if (date == "0212" || date == "1312" || date == "2012" || date == "2412" || date == "3112") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 2 " +
@@ -1517,7 +1517,7 @@ module.exports = {
                 "\n (7) Hisyaryumon [Ultimate/Vaccine]" +
                 "\n (8) Seadramon [Champion/Data]" +
                 "\n (9) Whalemon [Champion/Vaccine]";
-        } else if (date == "0312" || date == "1425" || date == "3025") {
+        } else if (date == "0312" || date == "1412" || date == "2512" || date == "3012") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 2 " +
@@ -1531,7 +1531,7 @@ module.exports = {
                 "\n (7) Marine Devimon [Ultimate/Virus]" +
                 "\n (8) Hisyaryumon [Ultimate/Vaccine]" +
                 "\n (9) Seadramon [Champion/Data]";
-        } else if (date == "0412" || date == "1522" || date == "2622") {
+        } else if (date == "0412" || date == "1512" || date == "2212" || date == "2612") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 2 " +
@@ -1545,7 +1545,7 @@ module.exports = {
                 "\n (7) Swimmon [Rookie/Vaccine]" +
                 "\n (8) Marine Devimon [Ultimate/Virus]" +
                 "\n (9) Shakomon [Rookie/Virus]";
-        } else if (date == "0512" || date == "1627") {
+        } else if (date == "0512" || date == "1612" || date == "2712") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 3 " +
@@ -1559,7 +1559,7 @@ module.exports = {
                 "\n (7) Swimmon [Rookie/Vaccine]" +
                 "\n (8) Shakomon [Rookie/Virus]" +
                 "\n (9) Whalemon [Champion/Vaccine]";
-        } else if (date == "0612" || date == "1728") {
+        } else if (date == "0612" || date == "2812" || date == "1712") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 4 " +
@@ -1573,7 +1573,7 @@ module.exports = {
                 "\n (7) Mega Seadramon [Ultimate/Data]" +
                 "\n (8) Gekomon [Champion/Virus]" +
                 "\n (9) Seadramon [Champion/Data]";
-        } else if (date == "0712" || date == "1829") {
+        } else if (date == "0712" || date == "1812" || date == "2912") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 4 " +
@@ -1587,7 +1587,7 @@ module.exports = {
                 "\n (7) Seadramon [Champion/Data]" +
                 "\n (8) Marine Devimon [Ultimate/Virus]" +
                 "\n (9) Hisyaryumon [Ultimate/Vaccine]";
-        } else if (date == "0812" || date == "1919") {
+        } else if (date == "0812" || date == "1912") {
             answer = "" +
                 "\nWaterspace 1F:" +
                 "\n Cave 3 " +
