@@ -8,12 +8,10 @@ module.exports = {
 
         let date = new Date();
         let datepst = date.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" });
-        
-        // Convertir a objeto Date
+
         let [day, month, year, time] = datepst.replace(",", "").split(/\/| /);
         let datePSTObj = new Date(`${year}-${month}-${day}T${time}`);
         
-        // Ajustar la fecha si es antes de las 6 AM
         if (datePSTObj.getHours() <= 6) {
             datePSTObj.setDate(datePSTObj.getDate() - 1);
         }
@@ -1633,7 +1631,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor('Blurple')
-            .setTitle(date)
+            .setTitle('Waterspace Information')
             .setDescription(answer)
 
         message.channel.send({ embeds: [embed] });
