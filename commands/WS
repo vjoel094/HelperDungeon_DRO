@@ -16,12 +16,11 @@ module.exports = {
             datePSTObj.setDate(datePSTObj.getDate() - 1);
         }
         
-        // Construir manualmente el formato DDMM
         let adjustedDay = String(datePSTObj.getDate()).padStart(2, "0");
         let adjustedMonth = String(datePSTObj.getMonth() + 1).padStart(2, "0");
         date = adjustedDay + adjustedMonth;
         
-        console.log("Fecha final (DDMM):", date);
+        console.log("Final Date (DDMM):", date);
 
         var answer = "Not configured yet";
 
