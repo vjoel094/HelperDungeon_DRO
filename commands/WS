@@ -12,7 +12,7 @@ module.exports = {
         let [day, month, year, time] = datepst.replace(",", "").split(/\/| /);
         let datePSTObj = new Date(`${year}-${month}-${day}T${time}`);
         
-        if (datePSTObj.getHours() <= 6) {
+        if (datePSTObj.getHours() <= 5) {
             datePSTObj.setDate(datePSTObj.getDate() - 1);
         }
         
