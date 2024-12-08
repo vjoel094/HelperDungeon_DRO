@@ -12,10 +12,12 @@ module.exports = {
         let datePSTObj = new Date(datepst);
 
         if (datePSTObj.getHours() <= 6) {
-            datepst.setDate(date.getDate() - 1);
+            datePSTObj.setDate(datePSTObj.getDate() - 1);
+            date = datePSTObj.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" }).slice(0, 2) + datePSTObj.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" }).slice(3, 5);
         }
-
-        date = datepst.slice(0, 2) + datepst.slice(3, 5);
+        else {
+            date = datepst.slice(0, 2) + datepst.slice(3, 5);
+        }
 
         var answer = "Not configured yet";
 
