@@ -13,7 +13,8 @@ module.exports = {
 
         if (datePSTObj.getHours() <= 6) {
             datePSTObj.setDate(datePSTObj.getDate() - 1);
-            date = datePSTObj.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" }).slice(0, 2) + datePSTObj.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" }).slice(3, 5);
+            let dateLess = datePSTObj.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" });
+            date = dateLess.slice(0, 2) + dateLess.slice(3, 5);
         }
         else {
             date = datepst.slice(0, 2) + datepst.slice(3, 5);
