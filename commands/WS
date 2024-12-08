@@ -8,13 +8,19 @@ module.exports = {
 
         let date = new Date();
         let datepst = date.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" });
-
-        let datePSTObj = new Date(datepst);
+    
+        //let datePSTObj = new Date(datepst);
+        let [day, month, year, time] = datepst.replace(",", "").split(/\/| /);
+        let datePSTObj = new Date(`${year}-${month}-${day}T${time}`);
 
         if (datePSTObj.getHours() <= 6) {
+            //datePSTObj.setDate(datePSTObj.getDate() - 1);
+            //let dateLess = datePSTObj.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" });
+            //date = dateLess.slice(0, 2) + dateLess.slice(3, 5);
+
             datePSTObj.setDate(datePSTObj.getDate() - 1);
-            let dateLess = datePSTObj.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" });
-            date = dateLess.slice(0, 2) + dateLess.slice(3, 5);
+            let datepstMinusOne = datePSTObj.toLocaleString("en-GB", { timeZone: "America/Los_Angeles" });
+            date = datepstMinusOne.slice(0, 2) + datepstMinusOne.slice(3, 5);
         }
         else {
             date = datepst.slice(0, 2) + datepst.slice(3, 5);
