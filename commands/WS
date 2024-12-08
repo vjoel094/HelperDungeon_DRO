@@ -1627,7 +1627,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor('Blurple')
-            .setTitle('Waterspace Information')
+            .setTitle(date)
             .setDescription(answer)
 
         message.channel.send({ embeds: [embed] });
